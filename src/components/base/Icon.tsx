@@ -19,7 +19,7 @@ const Icon = ({
     fontSize,
     ...props.style
   };
-
+  
   return <IconTag style={{ ...iconStyle }} {...props} />; 
 };
 
