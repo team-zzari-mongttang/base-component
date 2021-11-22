@@ -7,7 +7,9 @@ module.exports = {
   ],
   "webpackFinal": async (config) => {
     config.resolve.alias["@components"] = path.resolve(__dirname, "../src/components");
+    config.resolve.alias["@base"] = path.resolve(__dirname, "../src/components/base");
     config.resolve.alias["@hooks"] = path.resolve(__dirname, "../src/hooks");
+    config.resolve.alias["@"] = path.resolve(__dirname, "../src");
     return config;
     
   },
