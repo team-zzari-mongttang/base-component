@@ -4,6 +4,11 @@ import { MdArrowBackIos } from 'react-icons/md';
 import { FiCopy, FiEdit, FiTrash2 } from 'react-icons/fi';
 import { BsArrowDownCircle, BsCaretLeftFill, BsCaretRightFill, BsPlusLg } from 'react-icons/bs';
 import { CgClose, CgMoreAlt } from 'react-icons/cg';
+import { IconType } from 'react-icons/lib';
+
+interface IIconTypes {
+  [iconName: string]: IconType
+}
 
 const $heart = FaRegHeart;
 const $filledHeart = FaHeart;
@@ -19,7 +24,7 @@ const $moveLeft = BsCaretLeftFill;
 const $moveRight = BsCaretRightFill;
 const $plus = BsPlusLg;
 
-export const ICON_TYPES = {    
+export const ICON_TYPES: IIconTypes = {    
   heart: $heart,           
   filledHeart: $filledHeart,               
   comment: $comment,            

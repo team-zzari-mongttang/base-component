@@ -12,7 +12,7 @@ const Icon = ({
   fontSize, 
   ...props 
 }: IIcon) => {
-  const { [name]: IconTag }: any = ICON_TYPES;
+  const { [name]: IconTag } = ICON_TYPES;
   // console.error(typeof IconTag); //function
 
   const iconStyle = {
